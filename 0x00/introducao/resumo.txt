@@ -1,0 +1,27 @@
+Microsserviços são serviços que executam uma ou poucas funções isoladas que, en conjunto, compõem um sistema.
+A arquitetura de microsserviços é uma evolução natural da arquitetura monolítica.
+
+Arquitetura monolítica:
+Todo o sistema é emcapsulado em uma única unidade, onde todos os domínios de negócio estão fortemente
+acoplados, sendo massivamente interdependentes, o que torna eles difíceis de se dar manutenção, um de adicionar
+novas funcionalidades, pois uma alteração em um ponto do sistema pode gerar efeitos colaterais em outros 
+domínios do sistema, gerando uma necessidade bem alta de testes regressivos nesses casos.
+um sistema monolítico é mais facil de se desenvolver, mas é muito mais difícil de se manter.
+A sua manutenção leva 90% mais tempo para ser concluída, comparada com a sua fase de desenvolvimento inicial.
+
+Arquitetura de microsserviços:
+O sistema é distribuido em diversas partes, cada uma responsável por uma única função, ou por poucas funções,
+onde os microsserviços se comunicam uns com os outros.
+
+3 benefícios da arquitetura de microsserviços são:
+
+1) baixo acoplamento e alta coesão: Baixo acoplamento entre domínios de negócio
+
+2) Independência dos outros serviços: Como eles trabalham em contextos isolados, cada um pode ter o seu próprio
+banco de dados e cada um pode usar um linguagem de desenvolvimento diferente. Por refletirem a separação dos 
+domínios de negócio, cada domínio de negócio e suas entregas podem ser alocados para cada equipe multidisciplinar 
+de desenvolvimento e manutenção.
+
+3) Falhas isoladas: não comprometem o sistema como um todo, permitindo que parte dele ainda continue funcionando.
+
+Os tipos de comunicação entre os microsserviços são: HTTP, mensageria e orientada a eventos.
